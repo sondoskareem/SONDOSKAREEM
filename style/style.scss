@@ -1,0 +1,140 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'lato' , sans-serif;
+    font-size: 62.5%;
+}
+body{
+    background-image:url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.navigation{
+    height: 7rem;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    &__icon{
+        width: 7rem;
+        height: 7rem;
+        margin: 2rem 0 0 2rem;
+        
+    }
+}
+.list{
+    
+    margin-right: 1rem;
+
+    &__active{
+        background-color: #888;
+        color: #a04d4d !important;
+        padding: 1rem 2rem;
+        border-radius: 3rem ;
+        
+    }
+
+    &__item{
+        font-size: 2rem;
+        font-weight: 700;
+        color: rgb(116, 116, 116);
+        list-style: none;
+        margin-right: 1rem;
+        display: inline-block;
+        transition: all .2s;
+        padding: 2rem;
+        &:hover{
+            background-color: #888;
+            color: #a04d4d !important;
+            padding: 1rem 2rem;
+            border-radius: 3rem ;
+            transform: translateY(1px);
+        }
+
+    }
+    &__link{
+        text-decoration: none;
+        text-transform: uppercase;
+        
+    }
+}
+.header-part{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 50%;
+    &__main{
+        font-size: 8rem;
+
+    }
+    &__sub{
+        font-family: 'Hanalei Fill', cursive;
+        font-size: 6rem;
+        display: block;
+        color: #a04d4d;
+        margin-left: 8rem;
+
+    }
+    p{
+        font-size: 2rem;
+        width: 70%;
+        margin-top: -5rem;
+
+    }
+    button{
+        background-image: linear-gradient(to right bottom , #a04d4d  , #806d6d);
+        border: none;
+        padding: 1rem;
+        border-radius: 5rem;
+        margin: .5rem 0 0 2rem;
+        transition: all .2s;
+        
+        a{
+        color: rgb(165, 164, 164);
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        }
+
+        &:hover{
+         transform: scale(1.1) translateY(2px);  
+         background-color: #a04d4d;
+         background-image: none;  
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.container{
+    position: absolute;
+    top: 70%;
+    right: 5%;
+}
+
+.side-box{
+
+    background-color: #cccccc;
+    img{
+
+    }
+
+    &__container{
+        span{
+
+        }
+        h3{
+
+        }
+        span{
+
+        }
+    }
+}
