@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .navigation {
@@ -84,10 +84,10 @@ body {
 }
 
 .header-part__sub {
-  font-family: 'Hanalei Fill', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 6rem;
   display: block;
-  color: #a04d4d;
+  color: #1d29cf;
   margin-left: 8rem;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 .header-part button a {
-  color: #a04d4d;
+  color: #5c5858;
   font-weight: 500;
   font-family: sans-serif;
   font-size: 1.2rem;
@@ -119,8 +119,8 @@ body {
 }
 
 .header-part button:hover {
-  -webkit-transform: scale(1.1) translateY(2px);
-          transform: scale(1.1) translateY(2px);
+  -webkit-transform: scale(1.1) translateY(-2px);
+          transform: scale(1.1) translateY(-2px);
   background-color: #777777;
 }
 
@@ -132,13 +132,163 @@ body {
   outline: none;
 }
 
-.container {
+.container-1 {
   position: absolute;
   top: 70%;
   right: 5%;
 }
 
+.container-2 {
+  position: absolute;
+  top: 70%;
+  right: 23%;
+}
+
 .side-box {
-  background-color: #cccccc;
+  background-position: center;
+  background-color: #cccccc63;
+  -webkit-filter: bl;
+          filter: bl;
+  height: 17rem;
+  width: 20rem;
+  border-radius: 4rem;
+  -webkit-box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.side-box__image-1 {
+  background-image: url(../img/2.jpg);
+}
+
+.side-box__image-2 {
+  background-image: url(../img/99.jpg);
+}
+
+.side-box__container {
+  position: absolute;
+  right: 2rem;
+  height: 7rem;
+  bottom: -1rem;
+  width: 80%;
+  border-radius: 1rem;
+  background-color: #d8d5d5;
+}
+
+.side-box__container h3 {
+  position: absolute;
+  -webkit-transform: translateX(1.6rem) translateY(1.5rem);
+          transform: translateX(1.6rem) translateY(1.5rem);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #1d29cf;
+  font-size: 2rem;
+}
+
+.side-box__first-el {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #a7a7a7;
+  position: absolute;
+  -webkit-transform: translateX(2rem) translateY(2rem);
+          transform: translateX(2rem) translateY(2rem);
+}
+
+.side-box__second-el {
+  font-size: 2.5rem;
+  color: #1d29cf;
+  position: absolute;
+  bottom: 50%;
+  right: 1rem;
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__image-side {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-image: url(../img/blue-2705642.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.popup__artical-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.popup__artical-side i {
+  font-size: 2rem;
+  color: #1d29cf;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.popup__artical-side h3 {
+  font-size: 2rem;
+}
+
+.popup__artical-side-gallery {
+  width: 90%;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.popup__artical-side-gallery img {
+  width: 33.3%;
+  height: 100%;
+}
+
+.popup__artical-side p {
+  padding: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
