@@ -1,0 +1,1 @@
+document.querySelector('.list__active').classList.remove
